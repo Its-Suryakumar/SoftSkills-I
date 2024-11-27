@@ -1,12 +1,12 @@
 import java.util.*;
 public class binaryPalindrome{
     public static boolean isbinaryPalindrome(int x){
-        int reversed = 0;
+        int reversed =0;
         int original = x;
         while(x>0){
-            reversed <<=1;
+            reversed<<=1;
             reversed |= (x&1);
-            x >>=1;
+            x>>=1;
         }
         return reversed==original;
     }

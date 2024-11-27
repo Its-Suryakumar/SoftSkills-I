@@ -1,9 +1,8 @@
 public class nibbleSwap {
     public static byte swapNibbles(byte b){
-        byte upperNibble = (byte) ((b&0xF0)>>>4);
-        byte lowerNibble = (byte) ((b&0x0F));
-
-        byte swappedByte = (byte) (lowerNibble<<4 | upperNibble);
+        byte upperNibble = (byte) ((0xF0&b) >>>4);
+        byte lowerNibble = (byte) (0x0F&b);
+        byte swappedByte = (byte) ((lowerNibble<<4)|upperNibble);
         return swappedByte;
     }
     public static void main(String[] args) {

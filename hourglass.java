@@ -20,6 +20,7 @@ public class hourglass {
         int R = sc.nextInt();
         int C = sc.nextInt();
         int [][] mat = new int[R][C];
+
         for(int i = 0;i<R;i++){
             for(int j=0;j<C;j++){
                 mat[i][j] = sc.nextInt();
